@@ -1,6 +1,6 @@
-import { NavLink, Route, Routes, useNavigate } from 'react-router-dom';
-import './App.css';
+import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import NewShipForm from './pages/NewShipForm';
+import './App.css';
 
 function App() {
   return (
@@ -20,6 +20,9 @@ function App() {
         <Route path="/market" element={<h2>Marketplace</h2>} />
         <Route path="/login" element={<h2>Login</h2>} />
       </Routes>
+      <footer>
+        <Link to="/ships/new">🚀 Create a new Ship</Link>
+      </footer>
     </div>
   );
 }
